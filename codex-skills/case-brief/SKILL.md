@@ -29,6 +29,17 @@ Use this skill when the user wants a structured case brief from a case number, d
 6. Check whether the cited statute remains current and whether later cases maintained, limited, or changed the rule.
 7. Add practical use notes, distinguishing points, and citation purpose.
 
+## Mode
+
+- Default to `Lite`
+- Switch to `Deep` when the user asks for precedent chain, later history, or practice implications
+- In `Lite`, minimize clarification questions and focus on core issues and key holdings
+
+## Source Priority
+
+- If `korean-law-mcp` is available, use it first for case lookup, statute text, and current-law checks
+- Use web search only as fallback
+
 ## Output Rules
 
 For each issue, separate:

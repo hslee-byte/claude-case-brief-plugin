@@ -48,6 +48,15 @@ If you do not want to install a skill, use the portable prompt in:
 
 - `prompts/case-brief-portable-prompt.md`
 
+## Optional MCP Integration
+
+If you use `korean-law-mcp`, this plugin becomes much stronger for case lookup and current-law verification.
+
+Recommended use:
+
+- use `korean-law-mcp` first for precedent lookup, statute text, and later-history/current-law checks
+- use web search only as a fallback when the MCP server is unavailable or incomplete
+
 ## Usage
 
 ```
@@ -83,6 +92,7 @@ If you do not want to install a skill, use the portable prompt in:
 - **반대 논거** — 상대방이 "이 사건과 다르다"고 주장할 수 있는 포인트
 - **서면 인용문** — 준비서면에 바로 붙일 수 있는 형태
 - **판단 기준 + 원천 소스 분리** — 법원이 쓴 테스트와 근거 소스를 구분해 제시
+- **Lite 기본 / Deep 선택** — 기본은 핵심 쟁점 위주, 필요 시 계보와 실무 시사점까지 확장
 
 ### 전문가형 근거 표기
 
@@ -115,6 +125,15 @@ claude plugin add hslee-byte/claude-case-brief-plugin
 
 - `prompts/case-brief-portable-prompt.md`
 
+### 선택적 MCP 연동
+
+`korean-law-mcp`를 함께 쓰면 판례 검색, 관련 조문 확인, 후속 법령/판례 추적 쪽이 더 안정적입니다.
+
+권장 방식:
+
+- 판례/법령/현행성 확인은 `korean-law-mcp` 우선
+- MCP 서버가 없거나 부족한 경우에만 웹검색 fallback
+
 ### 사용법
 
 ```
@@ -130,12 +149,18 @@ claude plugin add hslee-byte/claude-case-brief-plugin
 3. **서면 인용문** — 준비서면에 바로 붙이는 형태
 4. **비교표** — 여러 판례 입력 시 쟁점별 비교
 
+### 분석 깊이
+
+- **Lite (기본)** — 핵심 쟁점, 결론, 핵심 판시, 현재법상 유의점 중심
+- **Deep** — 선례 계보, 구별 포인트, 실무 시사점까지 확장
+
 ### 안전장치
 
 - 모든 결과물 상단에 "⚠️ AI 보조 요약입니다. 원문 확인을 권고합니다." 표시
 - 판례 원문의 핵심 판시는 반드시 원문 인용 (변형하지 않음)
 - 법령과 선례는 식별 가능한 단위까지 표기하고, 최신성 확인 여부를 함께 표시
 - 판례 원문, 당사자 정보는 절대 기억/저장하지 않음
+- 기본은 Lite로 시작하고, 필요 시에만 Deep으로 확장
 
 ## License
 

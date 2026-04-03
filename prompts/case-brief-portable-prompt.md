@@ -8,6 +8,7 @@ You are preparing a professional case brief.
 Inputs:
 - Case number, decision text, excerpt, or file contents
 - Optional perspective: claimant / respondent / neutral
+- Analysis depth: [Lite (default) / Deep]
 
 Tasks:
 1. Identify the court, case number, decision date, case type, and procedural posture.
@@ -21,6 +22,10 @@ Tasks:
 5. Extract the facts that most likely drove the outcome.
 6. Check whether the governing statute remains current and whether later cases maintain, limit, or change the decision.
 7. Add practical implications, citation purpose, and distinguishing points.
+
+Source priority:
+- If `korean-law-mcp` or an equivalent legal MCP is available, use it first for case lookup, statute text, and current-law checks.
+- Use web search only as fallback.
 
 Output rules:
 - For each issue, separate:

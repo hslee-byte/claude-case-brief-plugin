@@ -33,6 +33,21 @@ Case text or number → IRAC summary → Practice implications → Usable output
 claude plugin add hslee-byte/claude-case-brief-plugin
 ```
 
+## Use In Codex
+
+This repository also includes a Codex-ready skill folder:
+
+- `codex-skills/case-brief`
+
+Manual install:
+
+1. Copy `codex-skills/case-brief` into `$CODEX_HOME/skills/case-brief`
+2. Restart Codex
+
+If you do not want to install a skill, use the portable prompt in:
+
+- `prompts/case-brief-portable-prompt.md`
+
 ## Usage
 
 ```
@@ -84,6 +99,21 @@ claude plugin add hslee-byte/claude-case-brief-plugin
 ```bash
 claude plugin add hslee-byte/claude-case-brief-plugin
 ```
+
+### Codex에서 사용
+
+이 저장소에는 Codex용 스킬 폴더도 포함되어 있습니다.
+
+- `codex-skills/case-brief`
+
+수동 설치 방법:
+
+1. `codex-skills/case-brief` 폴더를 `$CODEX_HOME/skills/case-brief`로 복사
+2. Codex 재시작
+
+설치 없이 바로 쓰고 싶다면 아래 중립 프롬프트를 사용하면 됩니다.
+
+- `prompts/case-brief-portable-prompt.md`
 
 ### 사용법
 

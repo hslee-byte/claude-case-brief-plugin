@@ -1,0 +1,9 @@
+{
+  "name": "case-brief",
+  "description": "Case law IRAC summarizer — paste a court decision or case number, get structured Issue/Rule/Application/Conclusion summary with practice implications. Built for lawyers, patent attorneys, and labor attorneys.",
+  "version": "1.0.0",
+  "author": {
+    "name": "HS Lee",
+    "url": "https://github.com/Ark-Point"
+  }
+}
